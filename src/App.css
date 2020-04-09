@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+.Filter {
+  width: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Filter > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Filter h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-btn {
+  display: flex;
+}
+
+.filter-btn > div button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #e4e6eb;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.Filter > div:last-child {
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Filter > div:last-child > div {
+  display: flex;
+  padding: 0px 5px;
+}
+
+.Suggest {
+  width: 300px;
+  border: 1px solid #dddddd;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+}
+
+.Suggest > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Suggest > div:first-child > a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #262626;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.Suggest > :last-child {
+  margin-top: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.list-suggest {
+  display: flex;
+}
+
+.list-suggest > img {
+  margin: auto 5px;
+  border-radius: 50%;
+}
+
+.list-suggest > div:last-child {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-suggest > div > span:first-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-suggest > div > span:last-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.CreatePost {
+  width: 400px;
+  border: 1px solid #e9ebee;
+}
+
+.CreatePost > div:nth-child(1) {
+  background: #f5f6f7;
+  border: 1px solid #e9ebee;
+  border-radius: 3px;
+}
+
+.CreatePost > div:nth-child(2) {
+  display: flex;
+  width: 95%;
+  padding-top: 15px;
+  margin: auto;
+  border-bottom: 1px solid #e9ebee;
+}
+
+.CreatePost textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.CreatePost img {
+  border-radius: 50%;
+}
+
+.CreatePost h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.CreatePost > div:last-child {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px 0px;
+}
+
+.CreatePost > div:last-child > button {
+  font-family: Roboto;
+  width: 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  background-color: #f5f6f7;
+  border-radius: 20px;
+}
+
+.CreatePost > div:last-child > button:last-child {
+  width: 50px;
 }
